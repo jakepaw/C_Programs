@@ -49,8 +49,8 @@ int main (int argc, char * argv[]){
 	clear();
 	getmaxyx(stdscr, maxy, maxx);
 
-	if(length > maxx){
-		length = maxx-col;
+	if(length > maxy){
+		length = maxy-col;
 	}
 
 	scroll = malloc(2 * maxx + 1);
